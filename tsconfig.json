@@ -1,0 +1,18 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["src/__stories__/*", "node_modules", "lib"],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "es2020",
+    "allowJs": false,
+    "jsx": "react-native",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./lib",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
