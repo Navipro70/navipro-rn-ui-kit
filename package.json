@@ -9,24 +9,49 @@
   "author": "dima.matatoff@yandex.ru",
   "license": "MIT",
   "scripts": {
+    "pods": "yarn; cd ios; pod install; cd ..",
     "build": "tsc --project ./tsconfig.json",
     "publish": "npm version patch && npm publish",
-    "lint": "eslint ./src/ --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint ./src/ --ext .js,.jsx,.ts,.tsx",
+    "storybook": "yarn prestorybook && start-storybook -p 7007",
+    "prestorybook": "rnstl"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.0",
+    "@babel/core": "^7.18.2",
+    "@babel/runtime": "^7.18.2",
     "@react-native-community/eslint-config": "^3.0.2",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
     "@types/react": "^18.0.9",
     "@types/react-native": "^0.67.7",
     "@typescript-eslint/parser": "^5.26.0",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.16.0",
+    "metro-react-native-babel-preset": "^0.71.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-native": "^0.68.2",
+    "react-native-storybook-loader": "^2.0.5",
     "typescript": "^4.7.2"
   },
   "peerDependencies": {
     "react": ">=16.8",
     "react-native": ">=0.59"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.{ts,tsx}",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
