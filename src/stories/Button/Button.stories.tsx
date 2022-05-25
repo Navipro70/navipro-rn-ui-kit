@@ -8,9 +8,18 @@ export default {
   title: 'Button',
   args: {
     children: 'Hello world',
+    color: 'red',
+    Date: '18.02.2002',
+    knom: true,
+  },
+  argTypes: {
+    onPress: { action: 'pressed the button' },
+  },
+  parameters: {
+    notes: 'Standard Button component from UI Kit',
   },
   decorators: [
-    Story => (
+    (Story: any) => (
       <CenterView>
         <Story />
       </CenterView>
