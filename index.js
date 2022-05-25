@@ -1,9 +1,10 @@
-/**
- * @format
- */
-import React from 'react';
-import { AppRegistry, View, Text } from 'react-native';
-import StorybookUI from './storybook';
+import { AppRegistry } from 'react-native';
+import { getStorybookUI } from '@storybook/react-native';
+
 import { name as appName } from './app.json';
 
-AppRegistry.registerComponent(appName, () => StorybookUI);
+import './.storybook/storybook.requires';
+
+const StorybookUIRoot = getStorybookUI({});
+
+AppRegistry.registerComponent(appName, () => StorybookUIRoot);

@@ -72,3 +72,5 @@ buck-out/
 lib/
 
 .yarn/install-state.gz
+
+storybook.requires.js

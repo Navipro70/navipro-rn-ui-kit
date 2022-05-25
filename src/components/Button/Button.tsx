@@ -3,11 +3,12 @@ import { TouchableOpacity, Text } from 'react-native';
 
 interface ButtonProps {
   children: React.ReactNode;
+  onPress: () => void;
 }
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, onPress }: ButtonProps) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <Text>{children}</Text>
     </TouchableOpacity>
   );

@@ -8,7 +8,7 @@ interface Props {
 export const CenterView = ({ children }: Props) => {
   return (
     <View
-      style={{ justifyContent: 'center', alignItems: 'center' }}
+      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
       children={children}
     />
   );
