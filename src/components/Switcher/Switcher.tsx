@@ -13,12 +13,12 @@ const HEIGHT = 36;
 const BORDER_WIDTH = 1;
 const BORDER_COLOR = '#C4C4C4';
 
-interface ISwitchItem {
+export interface ISwitchItem {
   text: string;
   value: string;
 }
 
-export interface Props {
+export interface SwitcherProps {
   data: ISwitchItem[];
   width?: number;
   height?: number;
@@ -34,7 +34,7 @@ export const Switcher = ({
   borderColor = BORDER_COLOR,
   borderWidth = BORDER_WIDTH,
   onChange,
-}: Props) => {
+}: SwitcherProps) => {
   const index = useSharedValue(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
 

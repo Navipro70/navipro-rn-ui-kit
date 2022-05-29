@@ -1,10 +1,10 @@
 {
   "name": "navipro-rn-ui-kit",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib/**/*"
+    "lib"
   ],
   "author": "dima.matatoff@yandex.ru",
   "license": "MIT",
