@@ -1,1 +1,9 @@
-src/__stories__/
+src/stories
+ios
+android
+.storybook
+.buckconfig
+.warchmanconfig
+app.json
+babel.config.js
+metro.config.js
