@@ -1,6 +1,6 @@
 {
   "name": "navipro-rn-ui-kit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -14,7 +14,7 @@
     "ios": "react-native run-ios",
     "pods": "yarn; cd ios; pod install; cd ..",
     "build": "tsc --project ./tsconfig.json",
-    "publish": "npm version patch && npm publish",
+    "publish": "yarn build && npm version patch && npm publish",
     "lint": "eslint ./src/ --ext .js,.jsx,.ts,.tsx",
     "storybook-watcher": "sb-rn-watcher"
   },
