@@ -1,6 +1,6 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["src/__stories__/*", "node_modules", "lib"],
+  "exclude": ["src/stories/**/*", "node_modules"],
   "compilerOptions": {
     "target": "esnext",
     "module": "es2020",
