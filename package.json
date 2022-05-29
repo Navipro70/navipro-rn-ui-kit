@@ -39,6 +39,7 @@
     "@types/styled-components-react-native": "5.1.1",
     "@typescript-eslint/parser": "^5.26.0",
     "babel-jest": "^28.1.0",
+    "react-native-reanimated": "^2.8.0",
     "babel-loader": "^8.2.5",
     "eslint": "^8.16.0",
     "metro-react-native-babel-preset": "^0.71.0",
@@ -52,8 +53,5 @@
   "peerDependencies": {
     "react": ">=16.8",
     "react-native": ">=0.59"
-  },
-  "dependencies": {
-    "react-native-reanimated": "^2.8.0"
   }
 }
