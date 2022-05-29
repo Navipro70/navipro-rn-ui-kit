@@ -19,7 +19,7 @@ Only supports version of React Native >= 0.59.0
 ## Storybook preview
 
 ```shell
-git clone this
+git clone https://github.com/Navipro70/navipro-rn-ui-kit.git
 ```
 
 To see components by storybook on ios device:
