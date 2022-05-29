@@ -1,16 +1,18 @@
 import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react-native';
 
-import { Button } from '../../components/Button/Button';
+import { Button, Size } from '../../components/Button/Button';
 import { CenterView } from '../CenterView';
 
+// All examples of controls can be founded here https://github.com/storybookjs/react-native/tree/next-6.0/examples/native/components/ControlExamples
+
 export default {
-  component: Button,
   title: 'Button',
+  component: Button,
   args: {
     children: 'Hello world',
-    color: 'red',
-    Date: '18.02.2002',
-    knom: true,
+    loading: false,
+    disabled: false,
   },
   argTypes: {
     onPress: { action: 'pressed the button' },
@@ -19,12 +21,18 @@ export default {
     notes: 'Standard Button component from UI Kit',
   },
   decorators: [
-    (Story: any) => (
+    Story => (
       <CenterView>
         <Story />
       </CenterView>
     ),
   ],
-} as any;
+} as ComponentMeta<typeof Button>;
 
-export const Basic = args => <Button {...args} />;
+type Component = ComponentStory<typeof Button>;
+
+export const Small: Component = args => <Button size={Size.Small} {...args} />;
+export const Normal: Component = args => (
+  <Button size={Size.Normal} {...args} />
+);
+export const Big: Component = args => <Button size={Size.Big} {...args} />;

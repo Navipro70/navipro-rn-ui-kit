@@ -36,6 +36,7 @@
     "@storybook/react-native": "^6.0.1-beta.6",
     "@types/react": "^18.0.9",
     "@types/react-native": "^0.67.7",
+    "@types/styled-components-react-native": "5.1.1",
     "@typescript-eslint/parser": "^5.26.0",
     "babel-jest": "^28.1.0",
     "babel-loader": "^8.2.5",
@@ -45,10 +46,14 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-native": "^0.68.2",
+    "styled-components": "5.2.3",
     "typescript": "^4.7.2"
   },
   "peerDependencies": {
     "react": ">=16.8",
     "react-native": ">=0.59"
+  },
+  "dependencies": {
+    "react-native-reanimated": "^2.8.0"
   }
 }

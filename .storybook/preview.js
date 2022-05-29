@@ -11,7 +11,7 @@ export const parameters = {
   },
   backgrounds: [
     { name: 'white', value: 'white', default: true },
-    { name: 'warm', value: 'hotpink' },
-    { name: 'cool', value: 'deepskyblue' },
+    { name: 'dark', value: '#222' },
+    { name: 'facebook', value: '#4267B2' },
   ],
 };
